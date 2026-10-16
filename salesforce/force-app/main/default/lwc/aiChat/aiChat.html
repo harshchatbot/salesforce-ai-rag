@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Salesforce AI Assistant">
+        <div class="slds-p-around_medium">
+            <lightning-textarea 
+            label="Ask Question"
+            onchange={handleInputChange}></lightning-textarea>
+            <lightning-button 
+            label="Send"
+            variant="brand"
+            onclick={handleSend}></lightning-button>
+        </div>
+
+        <div class="slds-p-around_medium">
+            <template lwc:if={submittedQuestion}>
+                <p>You asked: {submittedQuestion} </p>
+            </template>
+            <template lwc:if={aiResponse}>
+                <p>AI Response : {aiResponse}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

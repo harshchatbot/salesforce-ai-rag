@@ -1,0 +1,25 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Salesforce
+.sf/
+.sfdx/
+.localdevserver/
+
+# Python
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+
+# Node.js
+node_modules/
+dist/
+coverage/
+
+# macOS
+.DS_Store
